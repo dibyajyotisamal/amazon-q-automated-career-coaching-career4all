@@ -4,27 +4,33 @@ Amazon Q Business expects ACL files in the following structure:
 
 ```json
 [
-    {
-        "keyPrefix": "s3://careercoach-additional-catalogs/Security/",
-        "aclEntries": [
-            {
-                "Name": "CareerCoaches",
-                "Type": "GROUP",
-                "Access": "ALLOW"
-            }
-        ]
-    },
-        {
-        "keyPrefix": "s3://careercoach-additional-catalogs/Medicine/",
-        "aclEntries": [
-            {
-                "Name": "CareerCoaches",
-                "Type": "GROUP",
-                "Access": "DENY"
-            }
-        ]
-    }
+  {
+    "keyPrefix": "s3://careercoach-additional-catalogs/Security/",
+    "aclEntries": [
+      {
+        "Name": "CareerCoaches",
+        "Type": "GROUP",
+        "Access": "ALLOW"
+      }
+    ]
+  },
+  {
+    "keyPrefix": "s3://careercoach-additional-catalogs/Medicine/",
+    "aclEntries": [
+      {
+        "Name": "career.coach.one",
+        "Type": "USER",
+        "Access": "DENY"
+      },
+      {
+        "Name": "career.coach.two",
+        "Type": "USER",
+        "Access": "ALLOW"
+      }
+    ]
+  }
 ]
+
 ```
 ---
 # Access Control List (ACL) Configuration - Documentation
