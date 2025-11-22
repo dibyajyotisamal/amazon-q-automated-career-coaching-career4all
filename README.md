@@ -168,8 +168,8 @@ The ACL file associates S3 `keyPrefix` paths with specific ALLOW / DENY rules fo
 
 Screenshots:
 
-- `screenshots/acl_access_allowed.png` – Example of allowed course access.
-- `screenshots/acl_access_denied.png` – Example of denied course access.
+- `screenshots/acl_access_allowed.png` - Example of allowed course access.
+- `screenshots/acl_access_denied.png` - Example of denied course access.
 
 See `docs/security-and-acl.md` for detailed behavior.
 
@@ -275,21 +275,4 @@ Potential future extensions:
 - `/docs/*.md` : Architecture, configuration, security, moderation, user guide, troubleshooting.
 - `/screenshots/*.png` : Evidence for rubric: app UI, data sources, sync, ACL behavior, keyword blocking, sharing, and verification.
 
----
-
-## 12. How This Maps to the Rubric
-
-- **Create and Customize Amazon Q Application**  
-  - Sections 3, 8, and screenshots `app_basic_interface.png`, `app_advanced_interface.png`.
-
-- **Upload Static PDF and Connect Amazon S3**  
-  - Section 4 and all `data_source_*` screenshots.
-
-- **Secure the Application**  
-  - Sections 5 and 6, plus `acl/*.json` and moderation screenshots.
-
-- **Publish and Share the Application**  
-  - Section 7, with sharing and verification screenshots.
-
-This alignment makes it easy for reviewers to validate each rubric item.
 
