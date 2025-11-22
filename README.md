@@ -165,6 +165,7 @@ The ACL file associates S3 `keyPrefix` paths with specific ALLOW / DENY rules fo
 
 - Certain course catalogs are **visible only** to authorized coaches.
 - Restricted catalogs (e.g., highly specialized or sensitive content) are **not visible** to unauthorized users.
+- For this project, the Medicine catalog is accessible only to the user `career.coach.two`. The user `career.coach.one` is intentionally restricted and cannot access or retrieve any content under the Medicine prefix.
 
 Screenshots:
 
