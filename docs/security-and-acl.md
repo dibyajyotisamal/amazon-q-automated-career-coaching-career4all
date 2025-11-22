@@ -28,8 +28,8 @@ The ACL file:
 The ACL applies allow/deny rules to specific S3 prefixes.
 
 Example behavior:
-- `Security/` catalog → **Allowed**
-- `Medicine/` catalog → **Denied**
+- `Security/` catalog -> **Allowed**
+- `Medicine/` catalog -> **Denied**
 
 ---
 
