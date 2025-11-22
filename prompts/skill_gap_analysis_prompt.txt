@@ -1,0 +1,4 @@
+Analyze the @candidate_CV and @job_description 
+Identify the key skills, qualifications, and experience required in the job description and compare them with the candidate's profile from the CV. Consider any coach input provided: 
+Coach Input
+. Provide a comprehensive skill gap analysis that identifies: 1) Skills and qualifications the candidate already possesses that match the job requirements, 2) Skills, qualifications, or experience that the candidate is missing or needs to strengthen, 3) The relative importance of each gap identified (critical, important, or nice-to-have). Format your response in clear sections with bullet points where appropriate.
