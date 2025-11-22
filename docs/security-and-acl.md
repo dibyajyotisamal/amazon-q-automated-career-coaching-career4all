@@ -27,9 +27,9 @@ The ACL file:
 
 The ACL applies allow/deny rules to specific S3 prefixes.
 
-Example behavior:
-- `Security/` catalog -> **Allowed**
-- `Medicine/` catalog -> **Denied**
+- Allowed: `career.coach.two` can view and retrieve courses from the Medicine catalog.
+- Denied: `career.coach.one` cannot view or retrieve courses from the Medicine catalog.
+
 
 ---
 
