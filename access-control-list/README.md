@@ -46,8 +46,8 @@ Career Coaches have different areas of expertise. Some course catalogs contain s
 
 This ACL enables:
 
-- ALLOW access to authorized catalogs for the `CareerCoaches` group  
-- DENY access to restricted catalogs  
+- The Medicine catalog is restricted so that only `career.coach.two` can access it.
+- The user `career.coach.one` is denied access to this prefix based on explicit ACL rules.  
 - Ensures Amazon Q only retrieves and recommends courses a coach is authorized to see  
 - Enforces organizational compliance and data access boundaries  
 
