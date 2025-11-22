@@ -94,8 +94,8 @@ To confirm correct ACL behavior, the following procedure was used:
 2. Query training content from both allowed and restricted folders.
 
 3. Expected outcomes:
-   - Allowed catalog → visible and included in recommendations  
-   - Restricted catalog → hidden or inaccessible, not referenced in any training suggestions  
+   - Allowed catalog -> visible and included in recommendations  
+   - Restricted catalog -> hidden or inaccessible, not referenced in any training suggestions  
 
 Screenshots of both the allowed and denied scenarios are included in the `/screenshots` folder.
 
