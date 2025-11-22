@@ -37,7 +37,7 @@ Build an **AI-powered career coaching assistant** using **Amazon Q Business** th
 The solution uses the following core components:
 
 - **Amazon Q Business Application** : `CareerCoachAssistant`
-- **Q App Web Experience** : multi-card interface for CV, job profile, skill gap analysis, recommendations, and schedule
+- **Q App Web Experience:** multi-card interface for CV, job profile, skill gap analysis, recommendations, and schedule
 - **Data Sources**
   - Manually uploaded **PDF course catalog**
   - **Amazon S3 bucket** for additional course catalogs
@@ -155,11 +155,11 @@ The solution uses the existing IAM Identity Center configuration:
 
 All testing and access verification is done using these provided identities, as required by the rubric.
 
-### 5.2 ACL Configuration for S3 Data Source
+### 5.2 Access Control List (ACL) Configuration for S3 Data Source
 
 An S3 data source is protected using an **Access Control List (ACL) configuration file**, stored here:
 
-- `acl/course_access_acl.json`
+- `access-control-list/course_access_acl.json`
 
 The ACL file associates S3 `keyPrefix` paths with specific ALLOW / DENY rules for the `CareerCoaches` group, ensuring:
 
@@ -270,7 +270,7 @@ Potential future extensions:
 ## 11. Repository Contents Overview
 
 - `README.md` : You are here. Main project overview.
-- `/acl/course_access_acl.json` : Access control file for restricted courses.
+- `/access-control-list/course_access_acl.json` : Access control file for restricted courses.
 - `/prompts/*.txt` : Prompt templates used in the Q App output cards.
 - `/docs/*.md` : Architecture, configuration, security, moderation, user guide, troubleshooting.
 - `/screenshots/*.png` : Evidence for rubric: app UI, data sources, sync, ACL behavior, keyword blocking, sharing, and verification.
