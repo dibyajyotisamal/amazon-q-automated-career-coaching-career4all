@@ -24,7 +24,7 @@ Contents include:
 
 Benefits:
 - Coaches can upload new catalogs directly
-- S3 → Q Business index sync keeps training data fresh
+- S3 -> Q Business index sync keeps training data fresh
 
 ---
 
