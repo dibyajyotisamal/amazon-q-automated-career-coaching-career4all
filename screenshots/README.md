@@ -1,4 +1,4 @@
-# Screenshots – Documentation and Rubric Mapping
+# Screenshots - Documentation and Rubric Mapping
 
 This folder contains all screenshots required for the “Amazon Q Automated Career Coaching – Career4All” project.  
 Screenshots are organized according to the project rubric.  
