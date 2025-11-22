@@ -184,7 +184,7 @@ To maintain content integrity and comply with organizational policy, **Global Co
 - Self-harm  
 - Attack  
 
-These are configured under **Global Controls → Blocked Phrases** so that any response containing these terms is blocked or replaced.
+These are configured under **Global Controls -> Blocked Phrases** so that any response containing these terms is blocked or replaced.
 
 Screenshot:
 
