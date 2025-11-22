@@ -1,32 +1,66 @@
-# Security Model and ACL Configuration
+# Security and Access Control (ACL) Configuration
 
-This document describes how access to course catalogs is controlled in the Career4All Career Coaching Assistant.
+This document explains how course catalog access restrictions were implemented using IAM Identity Center and an S3 ACL configuration.
 
-## Identity Model
+---
 
-- IAM Identity Center Group: `CareerCoaches`
-- Users:
-  - `career.coach.one`
-  - `career.coach.two`
+## 1. Identity Model
 
-These identities are used to test and verify access behavior.
+The project uses the provided IAM Identity Center setup:
 
-## ACL Configuration
+**Group:**  
+- `CareerCoaches`
 
-The S3 data source for course catalogs uses an ACL configuration file:
+**Users:**  
+- `career.coach.one`  
+- `career.coach.two`
 
-- Path: `acl/course_access_acl.json`
+These identities are used to test access permissions.
 
-The ACL defines access at the `keyPrefix` level, allowing or denying access to specific folders for the `CareerCoaches` group. This ensures that only qualified coaches can view certain specialized catalogs while others remain hidden.
+---
 
-## Verification
+## 2. ACL Enforcement
 
-We verified ACL behavior using the provided test users:
+The ACL file:
+- Located at `acl/course_access_acl.json`
+- Attached to the S3 data source in Amazon Q Business
 
-- **Allowed scenario:**  
-  Authorized user can see courses in allowed prefixes.  
-  Screenshot: `screenshots/acl_access_allowed.png`
+The ACL applies allow/deny rules to specific S3 prefixes.
 
-- **Denied scenario:**  
-  The same or other users cannot see restricted catalogs.  
-  Screenshot: `screenshots/acl_access_denied.png`
+Example behavior:
+- `Security/` catalog → **Allowed**
+- `Medicine/` catalog → **Denied**
+
+---
+
+## 3. Verification
+
+### Testing Procedure:
+1. Log in as each coach user.
+2. Query courses expected to be allowed.
+3. Query courses expected to be restricted.
+
+### Expected Results:
+- Allowed courses appear normally.
+- Restricted courses are completely invisible or omitted.
+
+Screenshots:
+- `acl_access_allowed.png`
+- `acl_access_denied.png`
+
+---
+
+## 4. Common Issues and Solutions
+
+| Issue | Cause | Fix |
+|-------|-------|------|
+| ACL not applied | Data source not synced | Re-sync S3 data source |
+| User still sees restricted files | Incorrect group name | Ensure exact match to IAM Identity Center |
+| Prefix not respected | Missing trailing slash | Example: `Security/` not `Security` |
+
+---
+
+## 5. Security Notes
+
+- Use dedicated S3 prefixes for restricted catalogs.
+
