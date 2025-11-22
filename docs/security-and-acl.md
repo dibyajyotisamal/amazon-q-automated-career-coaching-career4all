@@ -41,8 +41,12 @@ Example behavior:
 3. Query courses expected to be restricted.
 
 ### Expected Results:
+  Allowed user: `career.coach.two`  
+  Restricted user: `career.coach.one`
+
 - Allowed courses appear normally.
 - Restricted courses are completely invisible or omitted.
+  
 
 Screenshots:
 - `acl_access_allowed.png`
