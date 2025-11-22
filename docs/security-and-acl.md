@@ -22,7 +22,7 @@ These identities are used to test access permissions.
 ## 2. ACL Enforcement
 
 The ACL file:
-- Located at `acl/course_access_acl.json`
+- Located at `access-control-list/course_access_acl.json`
 - Attached to the S3 data source in Amazon Q Business
 
 The ACL applies allow/deny rules to specific S3 prefixes.
