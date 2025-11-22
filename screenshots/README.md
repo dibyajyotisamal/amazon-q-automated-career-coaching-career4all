@@ -22,8 +22,8 @@ This folder contains the screenshots from various steps to verify the applicatio
 | training_schedule_prompt.png       | The exact prompt used inside the Training Schedule output card.                                      |
 | keyword_blocking_config.png        | Global Controls  Blocked Phrases configuration showing Gambling, Casino, Self-harm, Attack.         |
 | topic_specific_controls.png        | Topic Specific Controls configuration showing the rules set for mentions of self-harm.              |
-| acl_access_allowed.png             | Screenshot showing an allowed user accessing authorized course catalogs.                              |
-| acl_access_denied.png              | Screenshot showing restricted catalog access being blocked or hidden.                                |
+| acl_access_allowed.png             | Screenshot showing an allowed user (career.coach.two) accessing authorized course catalogs.          |
+| acl_access_denied.png              | Screenshot showing restricted information not available to a user without access (career.coach.one).  |
 | app_sharing_and_labels.png         | Application sharing page showing shared groups/users and applied labels.                             |
 | app_verified_status.png            | Verified Q App status with verification badge visible.                                                |
 
