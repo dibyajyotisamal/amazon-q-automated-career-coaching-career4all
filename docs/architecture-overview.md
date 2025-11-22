@@ -37,7 +37,7 @@ This document provides a high-level overview of the system architecture for the 
 
 ## 2. Data Flow Overview
 
-1. **User uploads CV + job profile → Q App**
+1. **User uploads CV + job profile -> Q App**
 2. **Skill gap analysis output card processes text**
 3. **Training recommendation card retrieves courses from:**
    - PDF catalog
