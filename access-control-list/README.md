@@ -1,3 +1,32 @@
+# ACL File Structure
+
+Amazon Q Business expects ACL files in the following structure:
+
+```json
+[
+    {
+        "keyPrefix": "s3://careercoach-additional-catalogs/Security/",
+        "aclEntries": [
+            {
+                "Name": "CareerCoaches",
+                "Type": "GROUP",
+                "Access": "ALLOW"
+            }
+        ]
+    },
+        {
+        "keyPrefix": "s3://careercoach-additional-catalogs/Medicine/",
+        "aclEntries": [
+            {
+                "Name": "CareerCoaches",
+                "Type": "GROUP",
+                "Access": "DENY"
+            }
+        ]
+    }
+]
+```
+---
 # Access Control List (ACL) Configuration – Documentation
 
 This directory contains the Access Control List (ACL) configuration used in the Career4All automated career coaching project built with Amazon Q Business.  
@@ -36,37 +65,6 @@ This ensures restricted course catalogs never appear in training suggestions for
 ### `course_access_acl.json`
 
 This ACL file defines the access rules applied to the S3 data source.
-
----
-
-## 4. ACL File Structure
-
-Amazon Q Business expects ACL files in the following structure:
-
-```json
-[
-    {
-        "keyPrefix": "s3://careercoach-additional-catalogs/Security/",
-        "aclEntries": [
-            {
-                "Name": "CareerCoaches",
-                "Type": "GROUP",
-                "Access": "ALLOW"
-            }
-        ]
-    },
-        {
-        "keyPrefix": "s3://careercoach-additional-catalogs/Medicine/",
-        "aclEntries": [
-            {
-                "Name": "CareerCoaches",
-                "Type": "GROUP",
-                "Access": "DENY"
-            }
-        ]
-    }
-]
-```
 
 ---
 
