@@ -27,7 +27,7 @@ Amazon Q Business expects ACL files in the following structure:
 ]
 ```
 ---
-# Access Control List (ACL) Configuration – Documentation
+# Access Control List (ACL) Configuration - Documentation
 
 This directory contains the Access Control List (ACL) configuration used in the Career4All automated career coaching project built with Amazon Q Business.  
 The ACL enforces fine-grained access control over course catalog files stored in Amazon S3, ensuring that only authorized Career Coaches can access specific restricted training materials.
@@ -72,7 +72,7 @@ This ACL file defines the access rules applied to the S3 data source.
 
 The ACL file is attached to the Amazon Q Business S3 data source inside:
 
-**Amazon Q Business → Applications → CareerCoachAssistant → Data Sources**
+**Amazon Q Business -> Applications -> CareerCoachAssistant -> Data Sources**
 
 Setup performed:
 
